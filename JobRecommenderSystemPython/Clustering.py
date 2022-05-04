@@ -1,4 +1,4 @@
-#!C:\Users\Spider Projects\AppData\Local\Programs\Python\Python39\python
+#!C:\Users\VaibhavDharmik\AppData\Local\Programs\Python\Python39\python
 import cgi
 import mysql.connector as mycon
 import base64
@@ -31,5 +31,10 @@ try:
     print("</html>")
     
 except Exception as e:
-        print(e)
+    print(e)
+    print("<html>")
+    print("<head>")
+    print("<meta http-equiv='refresh' content='0;url=http://localhost:8080/fromPythonClust?userid="+userid+"'/>")
+    print("</head>")
+    print("</html>")
         #print("Variable x is not defined"+ NameError)
